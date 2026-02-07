@@ -137,7 +137,23 @@
         </div>
 
         <div class="certs-grid">
-          <div id="certList" class="list"></div>
+        <div class="table-wrap">
+  <table class="cert-table">
+    <thead>
+      <tr>
+        <th>Certification</th>
+        <th>Issuer</th>
+        <th>Category</th>
+        <th>Issued</th>
+        <th>Credential</th>
+      </tr>
+    </thead>
+    <tbody id="certList">
+      <!-- rows injected by JS -->
+    </tbody>
+  </table>
+</div>
+
 
           <aside class="card certs-aside">
             <h3>What belongs here</h3>
