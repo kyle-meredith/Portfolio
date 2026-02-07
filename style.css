@@ -287,14 +287,23 @@ code{
   background: rgba(18,26,36,.7);
   color:var(--muted);
 
-  /* Center specific certification table columns */
+  /* Force-center Category, Issued, Credential columns */
 .cert-table th:nth-child(3),
 .cert-table th:nth-child(4),
 .cert-table th:nth-child(5),
 .cert-table td:nth-child(3),
 .cert-table td:nth-child(4),
 .cert-table td:nth-child(5){
-  text-align: center;
+  text-align: center !important;
+}
+
+/* Badge/button centering (text-align isn't always enough) */
+.cert-table td:nth-child(3),
+.cert-table td:nth-child(5){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 }
