@@ -286,4 +286,15 @@ code{
   border:1px solid var(--line);
   background: rgba(18,26,36,.7);
   color:var(--muted);
+
+  /* Center specific certification table columns */
+.cert-table th:nth-child(3),
+.cert-table th:nth-child(4),
+.cert-table th:nth-child(5),
+.cert-table td:nth-child(3),
+.cert-table td:nth-child(4),
+.cert-table td:nth-child(5){
+  text-align: center;
+}
+
 }
