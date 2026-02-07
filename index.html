@@ -1,23 +1,249 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kyle Meredith | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional portfolio: training, instructional design, CRM enablement, and certifications." />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-  <h1>Kyle Meredith</h1>
-  <p>Instructional Designer, Trainer, and Learning Experience Builder</p>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Home">Kyle Meredith</a>
 
-  <h2>What this site will become</h2>
-  <ul>
-    <li>Professional portfolio</li>
-    <li>Certifications</li>
-    <li>Resume</li>
-    <li>Creative projects</li>
-  </ul>
+      <nav class="nav" aria-label="Primary">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#resume">Resume</a>
+        <a href="#creator">Creator</a>
+        <a class="btn small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>If you can see this page, GitHub Pages is working.</p>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Instructional Design • Training • Enablement</p>
+          <h1>Training that scales. Content that performs.</h1>
+          <p class="lead">
+            I build onboarding, job aids, and gamified learning that drives measurable outcomes.
+            This site houses my portfolio, certifications, and resume in one clean place.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#portfolio">View Portfolio</a>
+            <a class="btn secondary" href="#certifications">Browse Certifications</a>
+          </div>
+
+          <div class="proof-row">
+            <div class="proof">
+              <div class="proof-kpi">Impact</div>
+              <div class="proof-text">Add 2–3 KPI bullets once you drop them in</div>
+            </div>
+            <div class="proof">
+              <div class="proof-kpi">Tools</div>
+              <div class="proof-text">Salesforce • LMS • Captivate • Unreal (as needed)</div>
+            </div>
+            <div class="proof">
+              <div class="proof-kpi">Focus</div>
+              <div class="proof-text">Onboarding • Enablement • Performance improvement</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card card">
+          <h2 class="card-title">Quick Links</h2>
+          <div class="quick-links">
+            <a class="quick-link" href="#resume">
+              <span>Resume</span>
+              <span class="muted">PDF embed + download</span>
+            </a>
+            <a class="quick-link" href="#certifications">
+              <span>Certifications</span>
+              <span class="muted">Search + categories</span>
+            </a>
+            <a class="quick-link" href="#portfolio">
+              <span>Portfolio</span>
+              <span class="muted">Case studies + proof</span>
+            </a>
+            <a class="quick-link" href="#creator">
+              <span>Creator Hub</span>
+              <span class="muted">Separate lane</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Portfolio</h2>
+          <p class="muted">
+            Recruiter-friendly case studies. Replace the samples with your real projects.
+          </p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="chip is-active" data-filter="all" role="tab">All</button>
+          <button class="chip" data-filter="training" role="tab">Training</button>
+          <button class="chip" data-filter="instructional" role="tab">Instructional Design</button>
+          <button class="chip" data-filter="crm" role="tab">CRM Enablement</button>
+          <button class="chip" data-filter="gamification" role="tab">Gamification</button>
+        </div>
+
+        <div id="projectGrid" class="grid"></div>
+
+        <div class="callout card">
+          <h3>How projects should read</h3>
+          <ul class="muted">
+            <li><strong>Problem:</strong> what was broken / missing</li>
+            <li><strong>Action:</strong> what you built + tools used</li>
+            <li><strong>Result:</strong> KPI or proof (adoption, time saved, sales uplift, CSAT)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Certifications</h2>
+          <p class="muted">
+            Clean, searchable, and grouped so it looks impressive instead of overwhelming.
+          </p>
+        </div>
+
+        <div class="search-row">
+          <label class="sr-only" for="certSearch">Search certifications</label>
+          <input id="certSearch" type="search" placeholder="Search (Salesforce, Captivate, CompTIA, Agile, etc.)" />
+
+          <label class="sr-only" for="certCategory">Category</label>
+          <select id="certCategory">
+            <option value="all">All categories</option>
+            <option value="ld">Learning & Development</option>
+            <option value="crm">CRM</option>
+            <option value="it">IT</option>
+            <option value="tools">Tools</option>
+            <option value="compliance">Compliance</option>
+          </select>
+        </div>
+
+        <div class="certs-grid">
+          <div id="certList" class="list"></div>
+
+          <aside class="card certs-aside">
+            <h3>What belongs here</h3>
+            <p class="muted">
+              Only credentials you’d confidently show a hiring manager.
+              If you have 40+, we’ll group them and show the strongest first.
+            </p>
+            <div class="divider"></div>
+            <h4 class="muted">Best practice</h4>
+            <ul class="muted">
+              <li>Top 10–15 shown first</li>
+              <li>Everything else collapsible</li>
+              <li>Credential links when available</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Resume</h2>
+          <p class="muted">Embed your PDF and provide a direct download button.</p>
+        </div>
+
+        <div class="card">
+          <div class="resume-actions">
+            <a class="btn" href="./assets/Kyle_Meredith_Resume.pdf" download>Download Resume (PDF)</a>
+            <a class="btn secondary" href="#contact">Request a tailored version</a>
+          </div>
+
+          <div class="resume-frame" aria-label="Resume PDF viewer">
+            <!-- Once you add the PDF to /assets, this will render -->
+            <iframe title="Resume PDF" src="./assets/Kyle_Meredith_Resume.pdf"></iframe>
+          </div>
+
+          <p class="muted small">
+            If the PDF doesn’t load, your file path is wrong. It must be: <code>assets/Kyle_Meredith_Resume.pdf</code>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATOR HUB -->
+    <section id="creator" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Creator Hub</h2>
+          <p class="muted">
+            This is intentionally separated so the professional story stays clean.
+          </p>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Unreal / Games</h3>
+            <p class="muted">Show prototypes, devlogs, or polished demos here.</p>
+          </div>
+          <div class="card">
+            <h3>Music</h3>
+            <p class="muted">Link releases, performances, or writing samples.</p>
+          </div>
+          <div class="card">
+            <h3>Content</h3>
+            <p class="muted">YouTube/IG links + series formats.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Make it easy for recruiters and collaborators to reach you.</p>
+        </div>
+
+        <div class="card contact-card">
+          <div>
+            <div class="label">Email</div>
+            <a href="mailto:Kyle_mere@yahoo.com">Kyle_mere@yahoo.com</a>
+          </div>
+          <div>
+            <div class="label">LinkedIn</div>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">Add your LinkedIn URL</a>
+          </div>
+          <div>
+            <div class="label">Location</div>
+            <div>Connecticut, USA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small class="muted">© <span id="year"></span> Kyle Meredith</small>
+      <small class="muted">Built with GitHub Pages</small>
+    </div>
+  </footer>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
