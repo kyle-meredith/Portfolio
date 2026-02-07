@@ -3,37 +3,17 @@ window.SITE_DATA = {
     {
       title: "Training Program / Learning Journey (Sample)",
       tag: "training",
-      when: "Year",
+      when: "2024–2025",
       tools: ["LMS", "Job Aids", "Workshops"],
       problem: "New hires needed faster ramp and consistent performance.",
       action: "Built structured learning path + coaching tools + assessments.",
-      result: "Add KPI (ex: ramp time reduced, CSAT improved).",
-      links: []
-    },
-    {
-      title: "CRM Enablement (Sample)",
-      tag: "crm",
-      when: "Year",
-      tools: ["Salesforce", "Process Guides"],
-      problem: "Low adoption and inconsistent workflow usage.",
-      action: "Created role-based training, quick guides, and office hours.",
-      result: "Add KPI (ex: increased adoption, reduced tickets).",
-      links: []
-    },
-    {
-      title: "Gamified Training (Sample)",
-      tag: "gamification",
-      when: "Year",
-      tools: ["ELB Learning", "Canva", "Clipchamp"],
-      problem: "Engagement and retention were low in knowledge checks.",
-      action: "Built arcade-style games + spaced repetition challenges.",
-      result: "Add KPI (ex: higher pass rates / participation).",
+      result: "Add KPI (ramp time reduced, CSAT improved, etc.).",
       links: []
     }
   ],
 
-   certs: [
-    // --- Unreal / Game / Animation / Motion ---
+  certs: [
+    // Unreal / Game / Animation / Motion
     { name: "Unreal Essential Training (2019)", issuer: "LinkedIn Learning", category: "tools", date: "2022-09", url: "" },
     { name: "Unreal: Blueprint", issuer: "LinkedIn Learning", category: "tools", date: "2022-07", url: "" },
     { name: "Game Design Foundations: 1 Ideas, Core Loops, and Goals", issuer: "LinkedIn Learning", category: "tools", date: "2022-06", url: "" },
@@ -42,7 +22,7 @@ window.SITE_DATA = {
     { name: "Learning Motion Graphics", issuer: "LinkedIn Learning", category: "tools", date: "2022-07", url: "" },
     { name: "Motion Graphic Design: Animation", issuer: "LinkedIn Learning", category: "tools", date: "2022-06", url: "" },
 
-    // --- IT / Networking / Security ---
+    // IT / Networking / Security
     { name: "Learning Network Troubleshooting", issuer: "LinkedIn Learning", category: "it", date: "2022-09", url: "" },
     { name: "Learning PC Maintenance and Performance", issuer: "LinkedIn Learning", category: "it", date: "2022-09", url: "" },
     { name: "Windows 10: Administration", issuer: "LinkedIn Learning", category: "it", date: "2022-09", url: "" },
@@ -51,17 +31,17 @@ window.SITE_DATA = {
     { name: "IT and Cybersecurity Risk Management Essential Training", issuer: "LinkedIn Learning", category: "it", date: "2022-07", url: "" },
     { name: "Cybersecurity with Cloud Computing", issuer: "LinkedIn Learning", category: "it", date: "2022-06", url: "" },
 
-    // --- Cloud / IoT / General Tech Concepts ---
+    // Cloud / IoT / Tech concepts
     { name: "Leveraging Cloud Computing for IoT", issuer: "LinkedIn Learning", category: "it", date: "2022-06", url: "" },
     { name: "Everything as a Service (XaaS) is the Future of Business", issuer: "LinkedIn Learning", category: "it", date: "2022-06", url: "" },
 
-    // --- Programming / APIs ---
+    // Programming / APIs
     { name: "Programming Foundations: Fundamentals", issuer: "LinkedIn Learning", category: "it", date: "2022-09", url: "" },
     { name: "Learning Java", issuer: "LinkedIn Learning", category: "it", date: "2022-07", url: "" },
     { name: "Data Cleaning in Python Essential Training", issuer: "LinkedIn Learning", category: "it", date: "2022-07", url: "" },
     { name: "Introduction to Web APIs", issuer: "LinkedIn Learning", category: "it", date: "2022-09", url: "" },
 
-    // --- Data / Databases / Analytics / Tableau / Excel ---
+    // Data / Databases / Analytics
     { name: "Data Fluency: Exploring and Describing Data (2019)", issuer: "LinkedIn Learning", category: "tools", date: "2022-07", url: "" },
     { name: "The Non-Technical Skills of Effective Data Scientists", issuer: "LinkedIn Learning", category: "tools", date: "2022-06", url: "" },
     { name: "Learning Excel: Data Analysis", issuer: "LinkedIn Learning", category: "tools", date: "2022-07", url: "" },
@@ -73,17 +53,17 @@ window.SITE_DATA = {
     { name: "Learning MySQL Development", issuer: "LinkedIn Learning", category: "it", date: "2022-05", url: "" },
     { name: "NoSQL Essential Training", issuer: "LinkedIn Learning", category: "it", date: "2022-05", url: "" },
 
-    // --- Project / Process / Quality ---
+    // Project / Process / Quality
     { name: "Agile Foundations", issuer: "LinkedIn Learning", category: "ld", date: "2022-06", url: "" },
     { name: "Agile Project Leadership", issuer: "LinkedIn Learning", category: "ld", date: "2022-07", url: "" },
     { name: "Software Development Life Cycle (SDLC)", issuer: "LinkedIn Learning", category: "ld", date: "2022-06", url: "" },
     { name: "Six Sigma Foundations", issuer: "LinkedIn Learning", category: "ld", date: "2022-06", url: "" },
 
-    // --- Tools / GitHub / Jira ---
+    // Tools / Jira / GitHub
     { name: "Learning Git and GitHub", issuer: "LinkedIn Learning", category: "tools", date: "2022-06", url: "" },
     { name: "Learning Jira Software (2019)", issuer: "LinkedIn Learning", category: "tools", date: "2022-07", url: "" },
 
-    // --- Other / Technical reading ---
+    // Other
     { name: "Electrical Systems: Reading Drawings and Schematics", issuer: "LinkedIn Learning", category: "tools", date: "2022-07", url: "" }
   ]
-
+};
