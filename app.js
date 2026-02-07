@@ -25,7 +25,7 @@ function renderProjects(filter = "all") {
   `).join("");
 }
 
-function renderCerts() {
+function renderCerts(){
   if (!certList) return;
 
   const q = (certSearch?.value || "").toLowerCase().trim();
@@ -37,19 +37,32 @@ function renderCerts() {
       (c.name || "").toLowerCase().includes(q) ||
       (c.issuer || "").toLowerCase().includes(q);
 
-    const matchesCat = cat === "all" ? true : c.category === cat;
+    const matchesCat = (cat === "all") ? true : c.category === cat;
     return matchesText && matchesCat;
   });
 
   certList.innerHTML = filtered.map(c => {
-    const date = c.date ? ` • ${c.date}` : "";
-    const link = c.url ? `<a class="btn secondary small" href="${c.url}" target="_blank" rel="noreferrer">Credential</a>` : "";
+    const date = c.date || "";
+    const link = c.url
+      ? `<a class="btn secondary small" href="${c.url}" target="_blank" rel="noreferrer">View</a>`
+      : `<span class="muted">—</span>`;
+
+    const categoryLabel = {
+      ld: "L&D",
+      crm: "CRM",
+      it: "IT",
+      tools: "Tools",
+      compliance: "Compliance"
+    }[c.category] || c.category;
+
     return `
-      <div class="card list-item">
-        <strong>${c.name}</strong>
-        <div class="meta">${c.issuer || "Issuer"}${date}</div>
-        ${link}
-      </div>
+      <tr>
+        <td><strong>${c.name}</strong></td>
+        <td>${c.issuer || "—"}</td>
+        <td><span class="cert-badge">${categoryLabel}</span></td>
+        <td>${date}</td>
+        <td>${link}</td>
+      </tr>
     `;
   }).join("");
 }
