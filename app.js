@@ -1,16 +1,15 @@
 (function () {
-  // Run only after DOM exists
   function init() {
     const data = window.SITE_DATA || { projects: [], certs: [] };
     const projects = Array.isArray(data.projects) ? data.projects : [];
     const certs = Array.isArray(data.certs) ? data.certs : [];
 
     const projectGrid = document.getElementById("projectGrid");
-    const certList = document.getElementById("certList"); // tbody for table
+    const certList = document.getElementById("certList"); // tbody
     const certSearch = document.getElementById("certSearch");
     const certCategory = document.getElementById("certCategory");
 
-    // Debug (shows you data is actually loaded)
+    // Visible debug so we KNOW JS is running and data loaded
     const debugEl = document.getElementById("debug");
     if (debugEl) debugEl.textContent = `Loaded: ${projects.length} projects, ${certs.length} certs`;
 
@@ -18,13 +17,14 @@
     const yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // --- Projects render (do this FIRST so a cert error can't block it) ---
+    // --- Projects (render first; cert errors won't block this) ---
     function renderProjects(filter = "all") {
       if (!projectGrid) return;
 
-      const filtered = filter === "all"
-        ? projects
-        : projects.filter(p => (p.tag || "").toLowerCase() === filter);
+      const filtered =
+        filter === "all"
+          ? projects
+          : projects.filter(p => (p.tag || "").toLowerCase() === filter);
 
       projectGrid.innerHTML = filtered.map(p => `
         <article class="card list-item">
@@ -40,7 +40,6 @@
       `).join("");
     }
 
-    // Hook filter buttons
     document.querySelectorAll("[data-filter]").forEach(btn => {
       btn.addEventListener("click", () => {
         document.querySelectorAll(".chip").forEach(b => b.classList.remove("is-active"));
@@ -49,15 +48,16 @@
       });
     });
 
-    // Render projects immediately
     renderProjects("all");
 
-    // --- Certifications render (safe; won't break projects if it fails) ---
+    // --- Certifications (table rows) ---
     function renderCerts() {
       if (!certList) return;
 
       const q = (certSearch?.value || "").toLowerCase().trim();
       const cat = (certCategory?.value || "all").toLowerCase();
+
+      const labelMap = { ld: "L&D", crm: "CRM", it: "IT", tools: "Tools", compliance: "Compliance" };
 
       const filtered = certs.filter(c => {
         const matchesText =
@@ -69,8 +69,6 @@
         return matchesText && matchesCat;
       });
 
-      const labelMap = { ld: "L&D", crm: "CRM", it: "IT", tools: "Tools", compliance: "Compliance" };
-
       certList.innerHTML = filtered.map(c => {
         const categoryLabel = labelMap[c.category] || c.category || "—";
         const date = c.date || "—";
@@ -78,7 +76,6 @@
           ? `<a class="btn secondary small" href="${c.url}" target="_blank" rel="noreferrer">View</a>`
           : `<span class="muted">—</span>`;
 
-        // Table row
         return `
           <tr>
             <td><strong>${c.name || "—"}</strong></td>
@@ -91,15 +88,11 @@
       }).join("");
     }
 
-    // Bind cert controls
     certSearch?.addEventListener("input", renderCerts);
     certCategory?.addEventListener("change", renderCerts);
-
-    // Render certs
     renderCerts();
   }
 
-  // Ensure DOM ready even if scripts moved
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
