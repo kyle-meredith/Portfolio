@@ -1,108 +1,106 @@
 window.SITE_DATA = {
      projects: [
-    {
-      title: "Training Program / Learning Journey (Sample)",
-      tag: "training",
-      when: "2024–2025",
-      tools: ["LMS", "Job Aids", "Workshops"],
-      problem: "New hires needed faster ramp and consistent performance.",
-      action: "Built structured learning path + coaching tools + assessments.",
-      result: "Add KPI (ramp time reduced, CSAT improved, etc.).",
-      links: []
-    },
-    {
-      title: "Sales Enablement & Gamified Learning Program",
-      tag: "training",
-      when: "2024–2025",
-      tools: [
-        "LMS",
-        "Gamified Learning",
-        "CRM-Aligned Job Aids",
-        "Performance Coaching"
-      ],
-      problem: "Inconsistent product knowledge, uneven CRM adoption, and longer ramp times were impacting agent performance and increasing coaching overhead.",
-      action: "Designed and implemented a structured enablement program combining role-based onboarding, gamified reinforcement, CRM-aligned job aids, and ongoing performance support.",
-      result: "Improved knowledge retention, increased workflow consistency, reduced reliance on ad-hoc coaching, and created a scalable training framework reusable across products and cohorts.",
-      links: []
-    },
-    {
-      title: "Role-Based Learning Architecture for Sales Enablement",
-      tag: "instructional",
-      when: "2024–2025",
-      tools: [
-        "Rockstar Learning (LMS)",
-        "ELB Learning / Training Arcade",
-        "Aptean CRM"
-      ],
-      problem: "Training content was fragmented, outdated, and inconsistent across roles, leading to longer ramp times, uneven performance, and increased compliance risk.",
-      action: "Designed and owned end-to-end role-based learning programs built from scratch and modernized legacy content into bite-sized, performance-focused modules. Structured linear onboarding for all learners followed by branching learning paths aligned to role, tenure, and responsibilities. Applied Agile learning, backward design, and scenario-based learning while maintaining group-based delivery to promote competition and peer learning through gamification.",
-      result: "Reduced ramp time, improved retention and consistency across sales workflows, lowered compliance and PII risk, and enabled agents to increase sales performance immediately following training completion.",
-      links: []
-    },
-    {
-      title: "Gamified Reinforcement & Performance Assessment System",
-      tag: "instructional",
-      when: "2024–2025",
-      tools: [
-        "ELB Learning",
-        "Training Arcade",
-        "Performance-Based Assessments",
-        "Job Aids & Reinforcement Assets"
-      ],
-      problem: "Post-training knowledge decay and inconsistent application of skills reduced long-term effectiveness of onboarding and enablement programs.",
-      action: "Designed a gamified reinforcement and assessment system layered on top of core training. Incorporated scenario-based role practice, performance-based quizzes, leaderboards, challenges, and manager sign-off requirements. Built reinforcement workflows including job aids, reminder emails, contests, and competitive learning experiences lasting two weeks post-training.",
-      result: "Improved knowledge retention beyond training completion, increased learner engagement, strengthened real-world application of skills, and provided leadership with clearer performance validation before agents went live.",
-      links: []
-    }
-{
-  title: "CRM 6 → CRM 10 Adoption & Workflow Enablement",
-  tag: "crm",
-  when: "2023",
-  tools: [
-    "Aptean CRM",
-    "Workflow Mapping",
-    "Role-Based Enablement",
-    "Job Aids & Reinforcement"
-  ],
-  problem: "The transition from CRM 6 to CRM 10 introduced new workflows, UI changes, and data handling requirements. Sales teams struggled with adoption, correct usage, and confidence, increasing the risk of workflow breakdowns and compliance issues.",
-  action: "Led CRM enablement for the CRM 6 to CRM 10 transition by designing workflow-first learning rather than feature-based training. Created role-based guidance, scenario-driven practice, and just-in-time job aids aligned to real sales conversations. Integrated CRM usage into training validation and reinforced correct behaviors through follow-up enablement and manager visibility.",
-  result: "Improved adoption of CRM 10 workflows, reduced user friction during the transition, reinforced correct data practices, and enabled sales teams to maintain performance while adapting to a new system.",
-  links: []
-}
-{
-  title: "CRM Workflow Enablement for Sales Performance",
-  tag: "crm",
-  when: "2024–2025",
-  tools: [
-    "Aptean CRM",
-    "Role-Based Workflows",
-    "Job Aids",
-    "Manager Validation"
-  ],
-  problem: "Inconsistent CRM usage and unclear workflows led to data quality issues, compliance risk, and uneven sales performance across teams.",
-  action: "Designed and delivered CRM enablement focused on real-world workflows rather than features. Built role-based guidance, scenario-driven practice, and job aids aligned to live sales conversations. Integrated CRM usage into training validation, requiring manager sign-off before agents could go live.",
-  result: "Improved CRM adoption consistency, reduced data entry errors and compliance risk, and enabled sales leaders to better trust CRM data for coaching and performance decisions.",
-  links: []
-}
-{
-  title: "CRM Adoption & Change Enablement During System Updates",
-  tag: "crm",
-  when: "2023–2025",
-  tools: [
-    "Aptean CRM",
-    "Change Enablement",
-    "Just-in-Time Learning",
-    "Reinforcement Assets"
-  ],
-  problem: "Frequent product and system updates created confusion, inconsistent usage, and resistance among non-technical sales teams.",
-  action: "Designed CRM enablement strategies to support system and product changes, including just-in-time learning, updated job aids, and targeted reinforcement. Focused on minimizing disruption while reinforcing correct workflows and data practices.",
-  result: "Reduced disruption during system changes, maintained CRM adoption standards, and supported consistent performance despite ongoing updates.",
-  links: []
-}
+  {
+    title: "Training Program / Learning Journey (Sample)",
+    tag: "training",
+    when: "2024–2025",
+    tools: ["LMS", "Job Aids", "Workshops"],
+    problem: "New hires needed faster ramp and consistent performance.",
+    action: "Built structured learning path + coaching tools + assessments.",
+    result: "Add KPI (ramp time reduced, CSAT improved, etc.).",
+    links: []
+  },
+  {
+    title: "Sales Enablement & Gamified Learning Program",
+    tag: "training",
+    when: "2024–2025",
+    tools: [
+      "LMS",
+      "Gamified Learning",
+      "CRM-Aligned Job Aids",
+      "Performance Coaching"
+    ],
+    problem: "Inconsistent product knowledge, uneven CRM adoption, and longer ramp times were impacting agent performance and increasing coaching overhead.",
+    action: "Designed and implemented a structured enablement program combining role-based onboarding, gamified reinforcement, CRM-aligned job aids, and ongoing performance support.",
+    result: "Improved knowledge retention, increased workflow consistency, reduced reliance on ad-hoc coaching, and created a scalable training framework reusable across products and cohorts.",
+    links: []
+  },
+  {
+    title: "Role-Based Learning Architecture for Sales Enablement",
+    tag: "instructional",
+    when: "2024–2025",
+    tools: [
+      "Rockstar Learning (LMS)",
+      "ELB Learning / Training Arcade",
+      "Aptean CRM"
+    ],
+    problem: "Training content was fragmented, outdated, and inconsistent across roles, leading to longer ramp times, uneven performance, and increased compliance risk.",
+    action: "Designed and owned end-to-end role-based learning programs built from scratch and modernized legacy content into bite-sized, performance-focused modules. Structured linear onboarding for all learners followed by branching learning paths aligned to role, tenure, and responsibilities. Applied Agile learning, backward design, and scenario-based learning while maintaining group-based delivery to promote competition and peer learning through gamification.",
+    result: "Reduced ramp time, improved retention and consistency across sales workflows, lowered compliance and PII risk, and enabled agents to increase sales performance immediately following training completion.",
+    links: []
+  },
+  {
+    title: "Gamified Reinforcement & Performance Assessment System",
+    tag: "instructional",
+    when: "2024–2025",
+    tools: [
+      "ELB Learning",
+      "Training Arcade",
+      "Performance-Based Assessments",
+      "Job Aids & Reinforcement Assets"
+    ],
+    problem: "Post-training knowledge decay and inconsistent application of skills reduced long-term effectiveness of onboarding and enablement programs.",
+    action: "Designed a gamified reinforcement and assessment system layered on top of core training. Incorporated scenario-based role practice, performance-based quizzes, leaderboards, challenges, and manager sign-off requirements. Built reinforcement workflows including job aids, reminder emails, contests, and competitive learning experiences lasting two weeks post-training.",
+    result: "Improved knowledge retention beyond training completion, increased learner engagement, strengthened real-world application of skills, and provided leadership with clearer performance validation before agents went live.",
+    links: []
+  },
+  {
+    title: "CRM 6 → CRM 10 Adoption & Workflow Enablement",
+    tag: "crm",
+    when: "2023",
+    tools: [
+      "Aptean CRM",
+      "Workflow Mapping",
+      "Role-Based Enablement",
+      "Job Aids & Reinforcement"
+    ],
+    problem: "The transition from CRM 6 to CRM 10 introduced new workflows, UI changes, and data handling requirements. Sales teams struggled with adoption, correct usage, and confidence, increasing the risk of workflow breakdowns and compliance issues.",
+    action: "Led CRM enablement for the CRM 6 to CRM 10 transition by designing workflow-first learning rather than feature-based training. Created role-based guidance, scenario-driven practice, and just-in-time job aids aligned to real sales conversations. Integrated CRM usage into training validation and reinforced correct behaviors through follow-up enablement and manager visibility.",
+    result: "Improved adoption of CRM 10 workflows, reduced user friction during the transition, reinforced correct data practices, and enabled sales teams to maintain performance while adapting to a new system.",
+    links: []
+  },
+  {
+    title: "CRM Workflow Enablement for Sales Performance",
+    tag: "crm",
+    when: "2024–2025",
+    tools: [
+      "Aptean CRM",
+      "Role-Based Workflows",
+      "Job Aids",
+      "Manager Validation"
+    ],
+    problem: "Inconsistent CRM usage and unclear workflows led to data quality issues, compliance risk, and uneven sales performance across teams.",
+    action: "Designed and delivered CRM enablement focused on real-world workflows rather than features. Built role-based guidance, scenario-driven practice, and job aids aligned to live sales conversations. Integrated CRM usage into training validation, requiring manager sign-off before agents could go live.",
+    result: "Improved CRM adoption consistency, reduced data entry errors and compliance risk, and enabled sales leaders to better trust CRM data for coaching and performance decisions.",
+    links: []
+  },
+  {
+    title: "CRM Adoption & Change Enablement During System Updates",
+    tag: "crm",
+    when: "2023–2025",
+    tools: [
+      "Aptean CRM",
+      "Change Enablement",
+      "Just-in-Time Learning",
+      "Reinforcement Assets"
+    ],
+    problem: "Frequent product and system updates created confusion, inconsistent usage, and resistance among non-technical sales teams.",
+    action: "Designed CRM enablement strategies to support system and product changes, including just-in-time learning, updated job aids, and targeted reinforcement. Focused on minimizing disruption while reinforcing correct workflows and data practices.",
+    result: "Reduced disruption during system changes, maintained CRM adoption standards, and supported consistent performance despite ongoing updates.",
+    links: []
+  }
+],
 
-
-          
-  ],
 
   certs: [
     // Unreal / Game / Animation / Motion
