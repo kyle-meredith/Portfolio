@@ -54,6 +54,54 @@ window.SITE_DATA = {
       result: "Improved knowledge retention beyond training completion, increased learner engagement, strengthened real-world application of skills, and provided leadership with clearer performance validation before agents went live.",
       links: []
     }
+{
+  title: "CRM 6 → CRM 10 Adoption & Workflow Enablement",
+  tag: "crm",
+  when: "2023",
+  tools: [
+    "Aptean CRM",
+    "Workflow Mapping",
+    "Role-Based Enablement",
+    "Job Aids & Reinforcement"
+  ],
+  problem: "The transition from CRM 6 to CRM 10 introduced new workflows, UI changes, and data handling requirements. Sales teams struggled with adoption, correct usage, and confidence, increasing the risk of workflow breakdowns and compliance issues.",
+  action: "Led CRM enablement for the CRM 6 to CRM 10 transition by designing workflow-first learning rather than feature-based training. Created role-based guidance, scenario-driven practice, and just-in-time job aids aligned to real sales conversations. Integrated CRM usage into training validation and reinforced correct behaviors through follow-up enablement and manager visibility.",
+  result: "Improved adoption of CRM 10 workflows, reduced user friction during the transition, reinforced correct data practices, and enabled sales teams to maintain performance while adapting to a new system.",
+  links: []
+}
+{
+  title: "CRM Workflow Enablement for Sales Performance",
+  tag: "crm",
+  when: "2024–2025",
+  tools: [
+    "Aptean CRM",
+    "Role-Based Workflows",
+    "Job Aids",
+    "Manager Validation"
+  ],
+  problem: "Inconsistent CRM usage and unclear workflows led to data quality issues, compliance risk, and uneven sales performance across teams.",
+  action: "Designed and delivered CRM enablement focused on real-world workflows rather than features. Built role-based guidance, scenario-driven practice, and job aids aligned to live sales conversations. Integrated CRM usage into training validation, requiring manager sign-off before agents could go live.",
+  result: "Improved CRM adoption consistency, reduced data entry errors and compliance risk, and enabled sales leaders to better trust CRM data for coaching and performance decisions.",
+  links: []
+}
+{
+  title: "CRM Adoption & Change Enablement During System Updates",
+  tag: "crm",
+  when: "2023–2025",
+  tools: [
+    "Aptean CRM",
+    "Change Enablement",
+    "Just-in-Time Learning",
+    "Reinforcement Assets"
+  ],
+  problem: "Frequent product and system updates created confusion, inconsistent usage, and resistance among non-technical sales teams.",
+  action: "Designed CRM enablement strategies to support system and product changes, including just-in-time learning, updated job aids, and targeted reinforcement. Focused on minimizing disruption while reinforcing correct workflows and data practices.",
+  result: "Reduced disruption during system changes, maintained CRM adoption standards, and supported consistent performance despite ongoing updates.",
+  links: []
+}
+
+
+          
   ],
 
   certs: [
