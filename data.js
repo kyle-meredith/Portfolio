@@ -25,6 +25,37 @@ window.SITE_DATA = {
       result: "Improved knowledge retention, increased workflow consistency, reduced reliance on ad-hoc coaching, and created a scalable training framework reusable across products and cohorts.",
       links: []
     }
+
+        {
+  title: "Role-Based Learning Architecture for Sales Enablement",
+  tag: "instructional",
+  when: "2024–2025",
+  tools: [
+    "Rockstar Learning (LMS)",
+    "ELB Learning / Training Arcade",
+    "Aptean CRM"
+  ],
+  problem: "Training content was fragmented, outdated, and inconsistent across roles, leading to longer ramp times, uneven performance, and increased compliance risk.",
+  action: "Designed and owned end-to-end role-based learning programs built from scratch and modernized legacy content into bite-sized, performance-focused modules. Structured linear onboarding for all learners followed by branching learning paths aligned to role, tenure, and responsibilities. Applied Agile learning, backward design, and scenario-based learning while maintaining group-based delivery to promote competition and peer learning through gamification.",
+  result: "Reduced ramp time, improved retention and consistency across sales workflows, lowered compliance and PII risk, and enabled agents to increase sales performance immediately following training completion.",
+  links: []
+}
+
+{
+  title: "Gamified Reinforcement & Performance Assessment System",
+  tag: "instructional",
+  when: "2024–2025",
+  tools: [
+    "ELB Learning",
+    "Training Arcade",
+    "Performance-Based Assessments",
+    "Job Aids & Reinforcement Assets"
+  ],
+  problem: "Post-training knowledge decay and inconsistent application of skills reduced long-term effectiveness of onboarding and enablement programs.",
+  action: "Designed a gamified reinforcement and assessment system layered on top of core training. Incorporated scenario-based role practice, performance-based quizzes, leaderboards, challenges, and manager sign-off requirements. Built reinforcement workflows including job aids, reminder emails, contests, and competitive learning experiences lasting two weeks post-training.",
+  result: "Improved knowledge retention beyond training completion, increased learner engagement, strengthened real-world application of skills, and provided leadership with clearer performance validation before agents went live.",
+  links: []
+}
   ],
 
   certs: [
