@@ -1,5 +1,5 @@
 window.SITE_DATA = {
-  projects: [
+    projects: [
     {
       title: "Training Program / Learning Journey (Sample)",
       tag: "training",
@@ -9,21 +9,22 @@ window.SITE_DATA = {
       action: "Built structured learning path + coaching tools + assessments.",
       result: "Add KPI (ramp time reduced, CSAT improved, etc.).",
       links: []
-    }
+    },
     {
-  title: "Sales Enablement & Gamified Learning Program",
-  tag: "training",
-  when: "2024–2025",
-  tools: [
-    "LMS",
-    "Gamified Learning",
-    "CRM-Aligned Job Aids",
-    "Performance Coaching"
-  ],
-  problem: "Inconsistent product knowledge, uneven CRM adoption, and longer ramp times were impacting agent performance and increasing coaching overhead.",
-  action: "Designed and implemented a structured enablement program combining role-based onboarding, gamified reinforcement, CRM-aligned job aids, and ongoing performance support.",
-  result: "Improved knowledge retention, increased workflow consistency, reduced reliance on ad-hoc coaching, and created a scalable training framework reusable across products and cohorts."
-}
+      title: "Sales Enablement & Gamified Learning Program",
+      tag: "training",
+      when: "2024–2025",
+      tools: [
+        "LMS",
+        "Gamified Learning",
+        "CRM-Aligned Job Aids",
+        "Performance Coaching"
+      ],
+      problem: "Inconsistent product knowledge, uneven CRM adoption, and longer ramp times were impacting agent performance and increasing coaching overhead.",
+      action: "Designed and implemented a structured enablement program combining role-based onboarding, gamified reinforcement, CRM-aligned job aids, and ongoing performance support.",
+      result: "Improved knowledge retention, increased workflow consistency, reduced reliance on ad-hoc coaching, and created a scalable training framework reusable across products and cohorts.",
+      links: []
+    }
   ],
 
   certs: [
