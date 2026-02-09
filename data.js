@@ -64,9 +64,9 @@ window.SITE_DATA = {
       "Role-Based Enablement",
       "Job Aids & Reinforcement"
     ],
-    problem: "The transition from CRM 6 to CRM 10 introduced new workflows, UI changes, and data handling requirements. Sales teams struggled with adoption, correct usage, and confidence, increasing the risk of workflow breakdowns and compliance issues.",
-    action: "Led CRM enablement for the CRM 6 to CRM 10 transition by designing workflow-first learning rather than feature-based training. Created role-based guidance, scenario-driven practice, and just-in-time job aids aligned to real sales conversations. Integrated CRM usage into training validation and reinforced correct behaviors through follow-up enablement and manager visibility.",
-    result: "Improved adoption of CRM 10 workflows, reduced user friction during the transition, reinforced correct data practices, and enabled sales teams to maintain performance while adapting to a new system.",
+    problem: "The transition from CRM 6 to CRM 10 introduced new workflows, UI changes, and data handling requirements.",
+    action: "Led CRM enablement for the CRM 6 to CRM 10 transition using workflow-first learning, scenario practice, and role-based reinforcement.",
+    result: "Improved adoption of CRM 10 workflows and reduced user friction during the transition.",
     links: []
   },
   {
@@ -79,9 +79,9 @@ window.SITE_DATA = {
       "Job Aids",
       "Manager Validation"
     ],
-    problem: "Inconsistent CRM usage and unclear workflows led to data quality issues, compliance risk, and uneven sales performance across teams.",
-    action: "Designed and delivered CRM enablement focused on real-world workflows rather than features. Built role-based guidance, scenario-driven practice, and job aids aligned to live sales conversations. Integrated CRM usage into training validation, requiring manager sign-off before agents could go live.",
-    result: "Improved CRM adoption consistency, reduced data entry errors and compliance risk, and enabled sales leaders to better trust CRM data for coaching and performance decisions.",
+    problem: "Inconsistent CRM usage led to data quality and compliance risk.",
+    action: "Designed CRM enablement focused on real-world workflows with validation gates.",
+    result: "Improved CRM adoption consistency and leadership trust in CRM data.",
     links: []
   },
   {
@@ -94,42 +94,43 @@ window.SITE_DATA = {
       "Just-in-Time Learning",
       "Reinforcement Assets"
     ],
-    problem: "Frequent product and system updates created confusion, inconsistent usage, and resistance among non-technical sales teams.",
-    action: "Designed CRM enablement strategies to support system and product changes, including just-in-time learning, updated job aids, and targeted reinforcement. Focused on minimizing disruption while reinforcing correct workflows and data practices.",
-    result: "Reduced disruption during system changes, maintained CRM adoption standards, and supported consistent performance despite ongoing updates.",
+    problem: "Frequent system updates caused adoption breakdowns.",
+    action: "Delivered just-in-time CRM enablement aligned to workflow changes.",
+    result: "Maintained adoption standards during ongoing updates.",
+    links: []
+  },
+  {
+    title: "Competitive Onboarding Gamification (Cohorts + Team Challenges)",
+    tag: "gamification",
+    when: "2024–2025",
+    tools: [
+      "Training Arcade",
+      "ELB Learning",
+      "Leaderboards",
+      "Scenario-Based Role Practice"
+    ],
+    problem: "Onboarding engagement and behavior consistency varied by cohort.",
+    action: "Designed cohort-based competitive gamification aligned to readiness behaviors.",
+    result: "Increased engagement, retention, and peer-driven learning.",
+    links: []
+  },
+  {
+    title: "Post-Training Reinforcement System (2-Week Challenges + Leaderboards)",
+    tag: "gamification",
+    when: "2024–2025",
+    tools: [
+      "Leaderboards",
+      "Challenges & Contests",
+      "Job Aids",
+      "Automated Reinforcement"
+    ],
+    problem: "Knowledge decay occurred after training completion.",
+    action: "Implemented a two-week gamified reinforcement program.",
+    result: "Sustained engagement and reduced post-training performance drop-off.",
     links: []
   }
-{
-  title: "Competitive Onboarding Gamification (Cohorts + Team Challenges)",
-  tag: "gamification",
-  when: "2024–2025",
-  tools: [
-    "Training Arcade",
-    "ELB Learning",
-    "Leaderboards",
-    "Scenario-Based Role Practice"
-  ],
-  problem: "Traditional onboarding struggled to keep engagement high and translate knowledge into consistent behaviors across a full cohort.",
-  action: "Designed a gamified cohort experience with group-based competition, scenario practice, and reinforcement challenges. Structured activities to promote peer learning, motivation, and repetition while aligning all games to real role behaviors and readiness standards.",
-  result: "Increased engagement during onboarding, improved retention through repetition and competition, and created a scalable cohort format reusable across roles and training classes.",
-  links: []
-}
-{
-  title: "Post-Training Reinforcement System (2-Week Challenges + Leaderboards)",
-  tag: "gamification",
-  when: "2024–2025",
-  tools: [
-    "Leaderboards",
-    "Challenges & Contests",
-    "Job Aids",
-    "Automated Reinforcement"
-  ],
-  problem: "Knowledge decay after training led to inconsistent execution and increased reliance on ad-hoc coaching.",
-  action: "Built a two-week reinforcement program after training completion using leaderboards, challenges, and targeted reminders. Paired gamified reinforcement with job aids (manuals, quick-reference PDFs) and follow-up prompts to sustain correct behaviors.",
-  result: "Improved retention after training, sustained engagement beyond the classroom, and reduced performance drop-off during the first weeks on the job.",
-  links: []
-}         
 ],
+
 
 
   certs: [
