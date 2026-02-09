@@ -24,52 +24,63 @@
   </header>
 
   <main id="top">
-   <!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-    <!-- Left column -->
-    <div>
-      
-      <p class="eyebrow">Instructional Design • Enablement • Systems Training</p>
-      <h1>Learning systems that drive performance at scale.</h1>
-      <p class="lead">
-        I design and lead training programs that increase adoption
-        and on-the-job performance across complex tools, systems, and workflows.
-      </p>
-<div id="projectGrid" class="grid"></div>
-        <div class="callout card">
-          <h3>How these initiatives created impact</h3>
-          <ul class="muted">
-  <li><strong>Business Impact Problem:</strong> What wasn’t working at scale</li>
-  <li><strong>Strategy & Execution:</strong> How the solution was designed and delivered</li>
-  <li><strong>Outcome:</strong> Measurable improvement or operational gain</li>
-</ul>
-        </div>
-      <div class="filters" role="tablist" aria-label="Project filters">
-          <button class="chip is-active" data-filter="all" role="tab">All</button>
-          <button class="chip" data-filter="training" role="tab">Training</button>
-          <button class="chip" data-filter="instructional" role="tab">Instructional Design</button>
-          <button class="chip" data-filter="crm" role="tab">CRM Enablement</button>
-          <button class="chip" data-filter="gamification" role="tab">Gamification</button>
-        </div>
-      <div class="proof-row">
-        <div class="proof">
-          <div class="proof-kpi">Scope</div>
-          <div class="proof-text">
-            New hire onboarding, role-based enablement, and continuous learning programs
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Instructional Design • Enablement • Systems Training</p>
+          <h1>Learning systems that drive performance at scale.</h1>
+          <p class="lead">
+            I design and lead training programs that increase adoption
+            and on-the-job performance across complex tools, systems, and workflows.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#portfolio">View Portfolio</a>
+            <a class="btn secondary" href="#certifications">Browse Certifications</a>
+          </div>
+
+          <div class="proof-row">
+            <div class="proof">
+              <div class="proof-kpi">Scope</div>
+              <div class="proof-text">
+                New hire onboarding, role-based enablement, and continuous learning programs
+              </div>
+            </div>
+
+            <div class="proof">
+              <div class="proof-kpi">Environment</div>
+              <div class="proof-text">
+                Insurance, CRM-driven workflows, cross-functional teams
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="proof">
-          <div class="proof-kpi">Environment</div>
-          <div class="proof-text">
-            Insurance, CRM-driven workflows, cross-functional teams
+        <!-- Optional right column card (keep if you want) -->
+        <div class="hero-card card">
+          <h2 class="card-title">Quick Links</h2>
+          <div class="quick-links">
+            <a class="quick-link" href="#resume">
+              <span>Resume</span>
+              <span class="muted">PDF embed + download</span>
+            </a>
+            <a class="quick-link" href="#certifications">
+              <span>Certifications</span>
+              <span class="muted">Search + categories</span>
+            </a>
+            <a class="quick-link" href="#portfolio">
+              <span>Portfolio</span>
+              <span class="muted">Initiatives + outcomes</span>
+            </a>
+            <a class="quick-link" href="#creator">
+              <span>Creator Hub</span>
+              <span class="muted">Separate lane</span>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- PORTFOLIO -->
     <section id="portfolio" class="section">
@@ -77,9 +88,50 @@
         <div class="section-head">
           <h2>Portfolio</h2>
           <p class="muted">
-  Strategic learning initiatives focused on performance improvement,
-  system adoption, and scalable enablement.
-</p>
+            Strategic learning initiatives focused on performance improvement,
+            system adoption, and scalable enablement.
+          </p>
+        </div>
+
+        <!-- Filters moved higher (directly under section head) -->
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="chip is-active" data-filter="all" role="tab">All</button>
+          <button class="chip" data-filter="training" role="tab">Training</button>
+          <button class="chip" data-filter="instructional" role="tab">Instructional Design</button>
+          <button class="chip" data-filter="crm" role="tab">CRM Enablement</button>
+          <button class="chip" data-filter="gamification" role="tab">Gamification</button>
+        </div>
+
+        <!-- Optional blurbs (only if your app.js supports them) -->
+        <p class="muted small" id="blurb-all">
+          Select a category to view work examples and outcomes.
+        </p>
+        <p class="muted small" id="blurb-training" style="display:none">
+          Training programs focused on delivery, coaching, and readiness-to-perform outcomes tied to real work.
+        </p>
+        <p class="muted small" id="blurb-instructional" style="display:none">
+          Instructional design focused on learning architecture, sequencing, assessment gates, and reinforcement design.
+        </p>
+        <p class="muted small" id="blurb-crm" style="display:none">
+          CRM enablement focused on workflow adoption, change management, and compliance-safe usage — not feature walkthroughs.
+        </p>
+        <p class="muted small" id="blurb-gamification" style="display:none">
+          Gamified learning systems designed to reinforce behavior change, increase retention, and sustain engagement post-training.
+        </p>
+
+        <!-- Debug (optional) -->
+        <p id="debug" class="muted small"></p>
+
+        <!-- Project grid belongs here (not in HERO) -->
+        <div id="projectGrid" class="grid"></div>
+
+        <div class="callout card">
+          <h3>How these initiatives created impact</h3>
+          <ul class="muted">
+            <li><strong>Business Impact Problem:</strong> What wasn’t working at scale</li>
+            <li><strong>Strategy & Execution:</strong> How the solution was designed and delivered</li>
+            <li><strong>Outcome:</strong> Measurable improvement or operational gain</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -90,9 +142,9 @@
         <div class="section-head">
           <h2>Certifications</h2>
           <p class="muted">
-  Credentials supporting senior-level work in instructional design,
-  systems training, and performance enablement.
-</p>
+            Credentials supporting senior-level work in instructional design,
+            systems training, and performance enablement.
+          </p>
         </div>
 
         <div class="search-row">
@@ -111,30 +163,29 @@
         </div>
 
         <div class="certs-grid">
-        <div class="table-wrap">
-  <table class="cert-table">
-    <thead>
-      <tr>
-        <th>Certification</th>
-        <th>Issuer</th>
-        <th>Category</th>
-        <th>Issued</th>
-        <th>Credential</th>
-      </tr>
-    </thead>
-    <tbody id="certList">
-      <!-- rows injected by JS -->
-    </tbody>
-  </table>
-</div>
-
+          <div class="table-wrap">
+            <table class="cert-table">
+              <thead>
+                <tr>
+                  <th>Certification</th>
+                  <th>Issuer</th>
+                  <th>Category</th>
+                  <th>Issued</th>
+                  <th>Credential</th>
+                </tr>
+              </thead>
+              <tbody id="certList">
+                <!-- rows injected by JS -->
+              </tbody>
+            </table>
+          </div>
 
           <aside class="card certs-aside">
             <h3>What belongs here</h3>
             <p class="muted small">
-  Certifications support applied experience delivering training
-  across technical systems, analytics tools, and operational workflows.
-</p>
+              Certifications support applied experience delivering training
+              across technical systems, analytics tools, and operational workflows.
+            </p>
 
             <div class="divider"></div>
             <h4 class="muted">Best practice</h4>
@@ -153,10 +204,10 @@
       <div class="container">
         <div class="section-head">
           <h2>Resume</h2>
-         <p class="muted">
-  Experience aligned to mid–senior Instructional Designer, Enablement,
-  and Systems Training roles.
-</p>
+          <p class="muted">
+            Experience aligned to mid–senior Instructional Designer, Enablement,
+            and Systems Training roles.
+          </p>
         </div>
 
         <div class="card">
@@ -166,14 +217,13 @@
           </div>
 
           <div class="resume-frame" aria-label="Resume PDF viewer">
-            <!-- Once you add the PDF to /assets, this will render -->
             <iframe title="Resume PDF" src="./assets/Kyle_Meredith_Resume.pdf"></iframe>
           </div>
 
           <p class="muted small">
-  Most relevant for roles involving onboarding, CRM enablement,
-  curriculum ownership, and performance optimization.
-</p>
+            Most relevant for roles involving onboarding, CRM enablement,
+            curriculum ownership, and performance optimization.
+          </p>
         </div>
       </div>
     </section>
@@ -207,46 +257,44 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Contact & Business Inquiries</h2>
-      <p class="muted">
-  Open to senior individual contributor roles, lead responsibilities,
-  contract engagements, and consulting conversations.
-</p>
-    </div>
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact & Business Inquiries</h2>
+          <p class="muted">
+            Open to senior individual contributor roles, lead responsibilities,
+            contract engagements, and consulting conversations.
+          </p>
+        </div>
 
-    <div class="card contact-card">
-      <div>
-        <div class="label">Email</div>
-        <a href="mailto:Kyle_mere@yahoo.com">Kyle_mere@yahoo.com</a>
-        <p class="muted small">
-          Best for direct inquiries, resumes, and formal communication.
-        </p>
-      </div>
+        <div class="card contact-card">
+          <div>
+            <div class="label">Email</div>
+            <a href="mailto:Kyle_mere@yahoo.com">Kyle_mere@yahoo.com</a>
+            <p class="muted small">
+              Best for direct inquiries, resumes, and formal communication.
+            </p>
+          </div>
 
-      <div>
-        <div class="label">LinkedIn</div>
-        <a href="https://www.linkedin.com/in/kyle-meredith-854869203"
-           target="_blank"
-           rel="noreferrer">
-          linkedin.com/in/kyle-meredith
-        </a>
-        <p class="muted small">
-          Preferred for professional networking and recruiter outreach.
-        </p>
-      </div>
+          <div>
+            <div class="label">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/kyle-meredith-854869203" target="_blank" rel="noreferrer">
+              linkedin.com/in/kyle-meredith
+            </a>
+            <p class="muted small">
+              Preferred for professional networking and recruiter outreach.
+            </p>
+          </div>
 
-      <div>
-        <div class="label">Business Focus</div>
-        <p class="small">
-          Instructional Design • Training Enablement • CRM & Systems Training<br>
-          Gamified Learning • Curriculum Development • Performance Coaching
-        </p>
+          <div>
+            <div class="label">Business Focus</div>
+            <p class="small">
+              Instructional Design • Training Enablement • CRM & Systems Training<br>
+              Gamified Learning • Curriculum Development • Performance Coaching
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
   </main>
 
   <footer class="site-footer">
