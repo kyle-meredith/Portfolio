@@ -99,6 +99,36 @@ window.SITE_DATA = {
     result: "Reduced disruption during system changes, maintained CRM adoption standards, and supported consistent performance despite ongoing updates.",
     links: []
   }
+{
+  title: "Competitive Onboarding Gamification (Cohorts + Team Challenges)",
+  tag: "gamification",
+  when: "2024–2025",
+  tools: [
+    "Training Arcade",
+    "ELB Learning",
+    "Leaderboards",
+    "Scenario-Based Role Practice"
+  ],
+  problem: "Traditional onboarding struggled to keep engagement high and translate knowledge into consistent behaviors across a full cohort.",
+  action: "Designed a gamified cohort experience with group-based competition, scenario practice, and reinforcement challenges. Structured activities to promote peer learning, motivation, and repetition while aligning all games to real role behaviors and readiness standards.",
+  result: "Increased engagement during onboarding, improved retention through repetition and competition, and created a scalable cohort format reusable across roles and training classes.",
+  links: []
+}
+{
+  title: "Post-Training Reinforcement System (2-Week Challenges + Leaderboards)",
+  tag: "gamification",
+  when: "2024–2025",
+  tools: [
+    "Leaderboards",
+    "Challenges & Contests",
+    "Job Aids",
+    "Automated Reinforcement"
+  ],
+  problem: "Knowledge decay after training led to inconsistent execution and increased reliance on ad-hoc coaching.",
+  action: "Built a two-week reinforcement program after training completion using leaderboards, challenges, and targeted reminders. Paired gamified reinforcement with job aids (manuals, quick-reference PDFs) and follow-up prompts to sustain correct behaviors.",
+  result: "Improved retention after training, sustained engagement beyond the classroom, and reduced performance drop-off during the first weeks on the job.",
+  links: []
+}         
 ],
 
 
